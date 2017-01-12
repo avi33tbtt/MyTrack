@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Chart.js demo</title>
+        <script src='Chart.min.js'></script>
+    </head>
+    <body>
+    	<form>
+    	<input></input>
+    	</br>
+    	<button>Submit</button>
+    	</form>
+
+</br>
+</br>
+</br>
+
+<h1>6765</h1>
+<canvas id="myChart" width="400" height="400"></canvas>
+<script>
+var ctx = document.getElementById("myChart");
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["2 am", "6 am", "10 am", "2 pm", "6 pm", "10 pm"],
+        datasets: [{
+            label: 'Temperature in F',
+            data: [98, 104, 96, 99.8, 96, 96],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                ],
+            borderWidth: 1
+        },
+        
+        {
+            //Normal
+            data: [97.6, 97.6, 97.6, 97.6, 97.6, 97.6],
+            backgroundColor: [
+                'rgba(2, 99, 132, 0)',
+                ],
+            borderColor: [
+                'rgba(2,99,132,1)',
+                ],
+            borderWidth: 1
+        },
+        
+        {
+            //low limit
+            data: [95, 95, 95, 95, 95, 95],
+            backgroundColor: [
+                'rgba(2, 99, 132, 0)',
+                ],
+            borderColor: [
+                'rgba(2,99,132,0)',
+                ],
+            borderWidth: 1
+        },
+        
+        
+        {
+            //high limit
+            data: [105, 105, 105, 105, 105, 105],
+            backgroundColor: [
+                'rgba(2, 99, 132, 0)',
+                ],
+            borderColor: [
+                'rgba(2,99,132,0)',
+                ],
+            borderWidth: 1
+        },
+        
+        {
+            //warning nurse
+            data: [99, 99, 99, 99, 99, 99],
+            backgroundColor: [
+                'rgba(2, 99, 132, 0)',
+                ],
+            borderColor: [
+                'rgba(2,99,132,0.2)',
+                ],
+            borderWidth: 1
+        },
+        
+        {
+            //warning doctor
+            data: [102, 102, 102, 102, 102, 102],
+            backgroundColor: [
+                'rgba(222, 2, 2, 0)',
+                ],
+            borderColor: [
+                'rgba(2,9,132,0.2)',
+                ],
+            borderWidth: 1
+        }
+        ]
+        
+    },
+    options: {
+        scales:{
+            yAxes: [{
+                ticks: {
+                    beginAtZero:false
+                }
+            }]
+        }
+    }
+});
+</script>
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br><form>
+    	<button>Next Day</button>
+    	</form>
+</br>
+</br>
+</br>
+
+
+<h1>6765</h1>
+<canvas id="myChart1" width="400" height="400"></canvas>
+<script>
+var ctx = document.getElementById("myChart1");
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["2 am", "6 am", "10 am", "2 pm", "6 pm", "10 pm", "2 am", "6 am", "10 am", "2 pm", "6 pm", "10 pm"],
+        datasets: [{
+            label: 'Temperature in F',
+            data: [98, 104, 96, 99.8, 96, 96, 98, 99, 96, 97, 96, 96],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                ],
+            borderWidth: 1
+        },
+        
+        {
+            //Normal
+            data: [97.6, 97.6, 97.6, 97.6, 97.6, 97.6, 97.6, 97.6, 97.6, 97.6, 97.6, 97.6],
+            backgroundColor: [
+                'rgba(2, 99, 132, 0)',
+                ],
+            borderColor: [
+                'rgba(2,99,132,1)',
+                ],
+            borderWidth: 1
+        },
+        
+        {
+            //low limit
+            data: [95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95, 95],
+            backgroundColor: [
+                'rgba(2, 99, 132, 0)',
+                ],
+            borderColor: [
+                'rgba(2,99,132,0)',
+                ],
+            borderWidth: 1
+        },
+        
+        
+        {
+            //high limit
+            data: [105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105, 105],
+            backgroundColor: [
+                'rgba(2, 99, 132, 0)',
+                ],
+            borderColor: [
+                'rgba(2,99,132,0)',
+                ],
+            borderWidth: 1
+        },
+        
+        {
+            //warning nurse
+            data: [99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99],
+            backgroundColor: [
+                'rgba(2, 99, 132, 0)',
+                ],
+            borderColor: [
+                'rgba(2,99,132,0.2)',
+                ],
+            borderWidth: 1
+        },
+        
+        {
+            //warning doctor
+            data: [102, 102, 102, 102, 102, 102, 102, 102, 102, 102, 102, 102],
+            backgroundColor: [
+                'rgba(222, 2, 2, 0)',
+                ],
+            borderColor: [
+                'rgba(2,9,132,0.2)',
+                ],
+            borderWidth: 1
+        }
+        ]
+        
+    },
+    options: {
+        scales:{
+            yAxes: [{
+                ticks: {
+                    beginAtZero:false
+                }
+            }]
+        }
+    }
+});
+</script>
+
+
+    </body>
+</html>
