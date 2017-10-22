@@ -7,14 +7,10 @@
     </head>
     <body>
     	<form>
-    	<input></input>
-    	</br>
-    	<button>Submit</button>
+ <br />
+            <input type="button">Submit</input>
     	</form>
-
-</br>
-</br>
-</br>
+<br /><br /><br />
 
 <h1>6765</h1>
 <canvas id="myChart" width="400" height="400"></canvas>
@@ -27,13 +23,14 @@ var myChart = new Chart(ctx, {
         datasets: [{
             label: 'Temperature in F',
             data: [98, 104, 96, 99.8, 96, 96],
+            //instead we can assign bg color at css
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 ],
             borderColor: [
                 'rgba(255,99,132,1)',
                 ],
-            borderWidth: 1
+            borderWidth: 1;
         },
         
         {
@@ -99,10 +96,7 @@ var myChart = new Chart(ctx, {
         ]
         
     },
-    options: {
-        scales:{
-            yAxes: [{
-                ticks: {
+    options: { scales:{ yAxes: [{  ticks: {
                     beginAtZero:false
                 }
             }]
@@ -110,21 +104,11 @@ var myChart = new Chart(ctx, {
     }
 });
 </script>
-
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br><form>
+<br /><br /><br /><br /><br /><br /><br /><br /><br />
+<form>
     	<button>Next Day</button>
     	</form>
-</br>
-</br>
-</br>
-
+<br /><br /><br /><br />
 
 <h1>6765</h1>
 <canvas id="myChart1" width="400" height="400"></canvas>
@@ -186,6 +170,7 @@ var myChart = new Chart(ctx, {
         {
             //warning nurse
             data: [99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99],
+            //instead of here we can assign it at css file.
             backgroundColor: [
                 'rgba(2, 99, 132, 0)',
                 ],
@@ -209,10 +194,7 @@ var myChart = new Chart(ctx, {
         ]
         
     },
-    options: {
-        scales:{
-            yAxes: [{
-                ticks: {
+    options: {  scales:{  yAxes: [{ ticks: {
                     beginAtZero:false
                 }
             }]
